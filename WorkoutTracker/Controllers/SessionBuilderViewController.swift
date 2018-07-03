@@ -9,9 +9,9 @@
 import UIKit
 import CoreData
 
-class WorkoutBuilderViewController: UIViewController {
+class SessionBuilderViewController: UIViewController {
     var currentSession = templateSessions.last
-    
+    var workouts = [Workout]()
     @IBOutlet weak var sessionNameLabel: UILabel!
     
     override func viewDidLoad() {

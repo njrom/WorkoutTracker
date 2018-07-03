@@ -13,7 +13,7 @@
 		AFEB9CD620EAE8F0005AED3A /* WorkoutTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFEB9CD420EAE8F0005AED3A /* WorkoutTracker.xcdatamodeld */; };
 		AFEB9CD820EAE8F4005AED3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFEB9CD720EAE8F4005AED3A /* Assets.xcassets */; };
 		AFEB9CDB20EAE8F4005AED3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFEB9CD920EAE8F4005AED3A /* LaunchScreen.storyboard */; };
-		AFEB9CE320EAEE52005AED3A /* WorkoutBuilderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEB9CE220EAEE52005AED3A /* WorkoutBuilderViewController.swift */; };
+		AFEB9CE320EAEE52005AED3A /* SessionBuilderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEB9CE220EAEE52005AED3A /* SessionBuilderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		AFEB9CD720EAE8F4005AED3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFEB9CDA20EAE8F4005AED3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFEB9CDC20EAE8F4005AED3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFEB9CE220EAEE52005AED3A /* WorkoutBuilderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutBuilderViewController.swift; sourceTree = "<group>"; };
+		AFEB9CE220EAEE52005AED3A /* SessionBuilderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionBuilderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +39,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF14553A20EBDB6400428F42 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AFEB9CCF20EAE8F0005AED3A /* MenuViewController.swift */,
+				AFEB9CE220EAEE52005AED3A /* SessionBuilderViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AF14553B20EBDB8800428F42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AFEB9CD420EAE8F0005AED3A /* WorkoutTracker.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF14553C20EBDB9B00428F42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AFEB9CD120EAE8F0005AED3A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF14553D20EBDBA700428F42 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFEB9CD720EAE8F4005AED3A /* Assets.xcassets */,
+				AFEB9CD920EAE8F4005AED3A /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		AFEB9CC120EAE8F0005AED3A = {
 			isa = PBXGroup;
 			children = (
@@ -59,13 +93,11 @@
 			isa = PBXGroup;
 			children = (
 				AFEB9CCD20EAE8F0005AED3A /* AppDelegate.swift */,
-				AFEB9CCF20EAE8F0005AED3A /* MenuViewController.swift */,
-				AFEB9CD120EAE8F0005AED3A /* Main.storyboard */,
-				AFEB9CD720EAE8F4005AED3A /* Assets.xcassets */,
-				AFEB9CD920EAE8F4005AED3A /* LaunchScreen.storyboard */,
+				AF14553B20EBDB8800428F42 /* Model */,
+				AF14553A20EBDB6400428F42 /* Controllers */,
+				AF14553C20EBDB9B00428F42 /* View */,
+				AF14553D20EBDBA700428F42 /* Supporting Files */,
 				AFEB9CDC20EAE8F4005AED3A /* Info.plist */,
-				AFEB9CD420EAE8F0005AED3A /* WorkoutTracker.xcdatamodeld */,
-				AFEB9CE220EAEE52005AED3A /* WorkoutBuilderViewController.swift */,
 			);
 			path = WorkoutTracker;
 			sourceTree = "<group>";
@@ -143,7 +175,7 @@
 			files = (
 				AFEB9CD020EAE8F0005AED3A /* MenuViewController.swift in Sources */,
 				AFEB9CD620EAE8F0005AED3A /* WorkoutTracker.xcdatamodeld in Sources */,
-				AFEB9CE320EAEE52005AED3A /* WorkoutBuilderViewController.swift in Sources */,
+				AFEB9CE320EAEE52005AED3A /* SessionBuilderViewController.swift in Sources */,
 				AFEB9CCE20EAE8F0005AED3A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

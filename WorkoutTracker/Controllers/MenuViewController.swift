@@ -27,18 +27,14 @@ class MenuViewController: UIViewController {
     }
 
     @IBAction func addTemplatePressed(_ sender: Any) {
-        createTemplate()
-    }
-    
-    func createTemplate() {
         var textField = UITextField()
-        let alert = UIAlertController(title: "Add a new Category", message: "", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Add a new Template", message: "", preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "Add Category", style: .default) { (action) in
+        let action = UIAlertAction(title: "Add Template", style: .default) { (action) in
             //What will happen when the user clicks the add item button on alert
             
             templateSessions.last?.name = textField.text!
-            self.performSegue(withIdentifier: "goToWorkoutBuilder", sender: self)
+            self.performSegue(withIdentifier: "goToSessionBuilder", sender: self)
         }
         alert.addTextField { (alertTextField) in
             alertTextField.placeholder = "Create new Category"
@@ -47,7 +43,8 @@ class MenuViewController: UIViewController {
         
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
-        
     }
+
+    
 }
 
