@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		AFEB9CCE20EAE8F0005AED3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEB9CCD20EAE8F0005AED3A /* AppDelegate.swift */; };
-		AFEB9CD020EAE8F0005AED3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEB9CCF20EAE8F0005AED3A /* ViewController.swift */; };
+		AFEB9CD020EAE8F0005AED3A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEB9CCF20EAE8F0005AED3A /* MenuViewController.swift */; };
 		AFEB9CD320EAE8F0005AED3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFEB9CD120EAE8F0005AED3A /* Main.storyboard */; };
 		AFEB9CD620EAE8F0005AED3A /* WorkoutTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFEB9CD420EAE8F0005AED3A /* WorkoutTracker.xcdatamodeld */; };
 		AFEB9CD820EAE8F4005AED3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFEB9CD720EAE8F4005AED3A /* Assets.xcassets */; };
 		AFEB9CDB20EAE8F4005AED3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFEB9CD920EAE8F4005AED3A /* LaunchScreen.storyboard */; };
+		AFEB9CE320EAEE52005AED3A /* WorkoutBuilderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEB9CE220EAEE52005AED3A /* WorkoutBuilderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AFEB9CCA20EAE8F0005AED3A /* WorkoutTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFEB9CCD20EAE8F0005AED3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AFEB9CCF20EAE8F0005AED3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AFEB9CCF20EAE8F0005AED3A /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		AFEB9CD220EAE8F0005AED3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFEB9CD520EAE8F0005AED3A /* WorkoutTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorkoutTracker.xcdatamodel; sourceTree = "<group>"; };
 		AFEB9CD720EAE8F4005AED3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFEB9CDA20EAE8F4005AED3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFEB9CDC20EAE8F4005AED3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFEB9CE220EAEE52005AED3A /* WorkoutBuilderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutBuilderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				AFEB9CCD20EAE8F0005AED3A /* AppDelegate.swift */,
-				AFEB9CCF20EAE8F0005AED3A /* ViewController.swift */,
+				AFEB9CCF20EAE8F0005AED3A /* MenuViewController.swift */,
 				AFEB9CD120EAE8F0005AED3A /* Main.storyboard */,
 				AFEB9CD720EAE8F4005AED3A /* Assets.xcassets */,
 				AFEB9CD920EAE8F4005AED3A /* LaunchScreen.storyboard */,
 				AFEB9CDC20EAE8F4005AED3A /* Info.plist */,
 				AFEB9CD420EAE8F0005AED3A /* WorkoutTracker.xcdatamodeld */,
+				AFEB9CE220EAEE52005AED3A /* WorkoutBuilderViewController.swift */,
 			);
 			path = WorkoutTracker;
 			sourceTree = "<group>";
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFEB9CD020EAE8F0005AED3A /* ViewController.swift in Sources */,
+				AFEB9CD020EAE8F0005AED3A /* MenuViewController.swift in Sources */,
 				AFEB9CD620EAE8F0005AED3A /* WorkoutTracker.xcdatamodeld in Sources */,
+				AFEB9CE320EAEE52005AED3A /* WorkoutBuilderViewController.swift in Sources */,
 				AFEB9CCE20EAE8F0005AED3A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
