@@ -8,7 +8,8 @@
 
 import UIKit
 
-var templateSessions = [Session]()
+var templateSessions = [Session]() // Only adds to templateSessions to then have Session builder save it
+//TODO: could probably have templateSessions sent to either SessionBuilder and Session selector 
 class MenuViewController: UIViewController {
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -17,14 +18,9 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var newTemplateSession = Session(context : self.context)
-        templateSessions.append(newTemplateSession)
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
 
     @IBAction func addTemplatePressed(_ sender: Any) {
         var textField = UITextField()
@@ -32,8 +28,9 @@ class MenuViewController: UIViewController {
         
         let action = UIAlertAction(title: "Add Template", style: .default) { (action) in
             //What will happen when the user clicks the add item button on alert
-            
-            templateSessions.last?.name = textField.text!
+            let newTemplate = Session(context : self.context)
+            newTemplate.name = textField.text!
+            templateSessions.append(newTemplate)
             self.performSegue(withIdentifier: "goToSessionBuilder", sender: self)
         }
         alert.addTextField { (alertTextField) in
@@ -44,7 +41,8 @@ class MenuViewController: UIViewController {
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
     }
-
+    
+    
     
 }
 

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF14554320ED21E100428F42 /* WorkoutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF14554220ED21E100428F42 /* WorkoutCollectionViewCell.swift */; };
+		AF14554520EE83A600428F42 /* SegueFromLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF14554420EE83A600428F42 /* SegueFromLeft.swift */; };
+		AF14554A20F107AC00428F42 /* WorkoutCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF14554920F107AC00428F42 /* WorkoutCollectionViewLayout.swift */; };
 		AFEB9CCE20EAE8F0005AED3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEB9CCD20EAE8F0005AED3A /* AppDelegate.swift */; };
 		AFEB9CD020EAE8F0005AED3A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEB9CCF20EAE8F0005AED3A /* MenuViewController.swift */; };
 		AFEB9CD320EAE8F0005AED3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFEB9CD120EAE8F0005AED3A /* Main.storyboard */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF14554220ED21E100428F42 /* WorkoutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCollectionViewCell.swift; sourceTree = "<group>"; };
+		AF14554420EE83A600428F42 /* SegueFromLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueFromLeft.swift; sourceTree = "<group>"; };
+		AF14554920F107AC00428F42 /* WorkoutCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCollectionViewLayout.swift; sourceTree = "<group>"; };
 		AFEB9CCA20EAE8F0005AED3A /* WorkoutTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFEB9CCD20EAE8F0005AED3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFEB9CCF20EAE8F0005AED3A /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				AFEB9CD120EAE8F0005AED3A /* Main.storyboard */,
+				AF14554420EE83A600428F42 /* SegueFromLeft.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -71,6 +78,15 @@
 				AFEB9CD920EAE8F4005AED3A /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF14554620F1074900428F42 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				AF14554220ED21E100428F42 /* WorkoutCollectionViewCell.swift */,
+				AF14554920F107AC00428F42 /* WorkoutCollectionViewLayout.swift */,
+			);
+			path = Layouts;
 			sourceTree = "<group>";
 		};
 		AFEB9CC120EAE8F0005AED3A = {
@@ -92,6 +108,7 @@
 		AFEB9CCC20EAE8F0005AED3A /* WorkoutTracker */ = {
 			isa = PBXGroup;
 			children = (
+				AF14554620F1074900428F42 /* Layouts */,
 				AFEB9CCD20EAE8F0005AED3A /* AppDelegate.swift */,
 				AF14553B20EBDB8800428F42 /* Model */,
 				AF14553A20EBDB6400428F42 /* Controllers */,
@@ -173,10 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF14554520EE83A600428F42 /* SegueFromLeft.swift in Sources */,
 				AFEB9CD020EAE8F0005AED3A /* MenuViewController.swift in Sources */,
 				AFEB9CD620EAE8F0005AED3A /* WorkoutTracker.xcdatamodeld in Sources */,
 				AFEB9CE320EAEE52005AED3A /* SessionBuilderViewController.swift in Sources */,
 				AFEB9CCE20EAE8F0005AED3A /* AppDelegate.swift in Sources */,
+				AF14554320ED21E100428F42 /* WorkoutCollectionViewCell.swift in Sources */,
+				AF14554A20F107AC00428F42 /* WorkoutCollectionViewLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
